@@ -1,0 +1,206 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.main{
+    height: 564px;
+    /* background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3)); */
+    /* position: relative; */
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mdi--beach {
+    background-color: rgb(5, 0, 78);
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M15 18.54c2.13-.33 4.5-.54 7-.54v4H5c0-.65 3.2-2.14 8-3.1v-6.5c-.84.25-1.55.81-2 1.55a3.495 3.495 0 0 0-6 0c.03-3.58 3.5-6.52 8-6.91V7a1 1 0 0 1 1-1a1 1 0 0 1 1 1v.04c4.5.39 7.96 3.33 8 6.91a3.495 3.495 0 0 0-6 0c-.45-.74-1.16-1.3-2-1.56zM7 2a5 5 0 0 1-5 5V2z'/%3E%3C/svg%3E");
+  }
+
+nav{
+    width: 99vw;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(189, 193, 245);
+}
+
+nav > ul > li{
+    list-style: none;
+    display: inline;
+    margin-left: 40px;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    color: rgb(5, 0, 78);
+    font-size: 17px;
+}
+
+.video{
+    position: sticky;
+    width:98.8vw;
+    height:400px;
+    top: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+}
+
+i{
+    font-size: 25px;
+}
+
+.abt{
+    text-align: center;
+    width: 50%;
+    line-height: 25px;
+    margin-left: 25%;
+    margin-top: 0;
+}
+
+.bedroom{
+    position: relative;
+    width: 800px;
+    height: 550px;
+    margin-top: 20px;
+    left: 10%;
+}
+
+.grid{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   
+}
+
+.abtbed{
+    text-align: center;
+    margin-left: 100px;
+}
+
+.abtbed span{
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+.abtbed p{
+    font-size: 20px;
+}
+
+.motiv{
+    font-size: 20px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.bathroom{
+   margin-top: 5px;
+   position: relative;
+   width: 90vw;
+   height: 550px;
+   left: 5%;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
